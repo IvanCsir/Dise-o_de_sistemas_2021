@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 
-class Bateria():
+class Bateria(metaclass=ABCMeta):
     @abstractmethod
     def funcion_bateria(self):
         pass

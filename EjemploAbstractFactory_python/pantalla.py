@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 
-class Pantalla():
+class Pantalla(metaclass=ABCMeta):
     @abstractmethod
     def funcion_pantalla(self):
         pass
