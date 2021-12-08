@@ -1,8 +1,12 @@
-class Motor:
+from abc import ABCMeta, abstractmethod
+
+class Motor(metaclass=ABCMeta):
+    @abstractmethod
     def saluda(self):
         pass
 
-class Ruedas:
+class Ruedas(metaclass=ABCMeta):
+    @abstractmethod
     def saluda(self):
         pass
 
